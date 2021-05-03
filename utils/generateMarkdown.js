@@ -38,15 +38,16 @@ const generateMarkdown = (answers) => {
   - [Contributing](#contributing)
   - [Tests](#tests)
   - [Questions](#questions)
-  
+
   ## Description
 
   ${description}
 
 
   ## Installation
-
+  \'\'\'
   ${installation}
+  \'\'\'
 
   ## Usage
 
@@ -54,7 +55,7 @@ const generateMarkdown = (answers) => {
 
   ## Licence
 
-  ${licence}
+  This content is licensed under the ${licence} Licence.
 
   ## Contributing
 

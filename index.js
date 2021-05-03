@@ -4,7 +4,7 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const fs = require("fs");
 
 // TODO: Create an array of questions for user input
-const questions = [
+const inputQuestions = [
   // Define the questions.
   {
     type: "input",
@@ -17,8 +17,8 @@ const questions = [
     name: "description",
   },
   {
-    type: "confirm",
-    message: "Does your project require any installation?",
+    type: "input",
+    message: "Please add any necessary installation information.",
     name: "installation",
   },
   {
@@ -52,14 +52,6 @@ const questions = [
   },
 ];
 
-const installQuestion = [
-  {
-    type: "confirm",
-    message: "Does your project require any installation?",
-    name: "installation",
-  },
-];
-
 // TODO: Create a function to write README file
 const writeToFile = (fileName) => {
   const callback = (err) => {
@@ -77,10 +69,6 @@ const writeToFile = (fileName) => {
 const init = async () => {
   // Ask the questions.
   const answers = await inquirer.prompt(questions);
-
-  // if (questions[2] === Yes) {
-  //   installQuestion;
-  // }
 
   const generatedMarkdown = generateMarkdown(answers);
 

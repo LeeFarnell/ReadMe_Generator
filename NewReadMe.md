@@ -1,13 +1,8 @@
-# My Stupid Project
+# My Project
 
-  ![Licence Badge](https://img.shields.io/badge/licence-%20-green)
-
-  ## Description
-
-  This project is so so stupid!
+  ![Licence Badge](https://img.shields.io/badge/licence-MIT-green)
 
   ## Table of Contents
-  - [Title: My Stupid Project](#title)
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
@@ -17,21 +12,27 @@
   - [Tests](#tests)
   - [Questions](#questions)
 
-  ## Installation
+  ## Description
 
-  true
+  My Project is one of a kind
+
+
+  ## Installation
+  '''
+  undefined
+  '''
 
   ## Usage
 
-  Be Stupid
+  Press the button
 
   ## Licence
 
-  MIT
+  This content is licensed under the MIT Licence.
 
   ## Contributing
 
-  Be stupid!
+  Open a pull request
 
   ## Tests
 
