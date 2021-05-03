@@ -25,7 +25,9 @@ const init = async () => {
   // Ask the questions.
   const answers = await inquirer.prompt(questions);
 
-  generateMarkdown(answers);
+  const generatedMarkdown = generateMarkdown(answers);
+
+  console.log(generatedMarkdown);
 };
 
 // Function call to initialize app

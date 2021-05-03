@@ -14,45 +14,41 @@ const renderLicenseSection = (license) => {};
 const generateMarkdown = (data) => {
   console.log(data);
 
-  // return `# Title
+  return `# Title
 
-  // ![Licence Badge](https://img.shields.io/badge/licence-%20-green)
+  ![Licence Badge](https://img.shields.io/badge/licence-%20-green)
 
-  // ## Description
+  ## Description
 
-  // Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-  // ## Table of Contents
+  ## Table of Contents
 
-  // ## Installation
+  ## Installation
 
-  // \```
-  // npm install
-  // node index.js
+  Installation Information
 
-  // \```
+  ## Usage
 
-  // ## Usage
+  - When the app is running, answer all the questions.
+  - After the questions are answered, check out the generated markdown.
 
-  // - When the app is running, answer all the questions.
-  // - After the questions are answered, check out the generated markdown.
+  ## Licence
 
-  // ## Licence
+  Licence code goes here
 
-  // Licence code goes here
+  ## Contributing
 
-  // ## Contributing
+  Open up a pull request and I'll take a look.
 
-  // Open up a pull request and I'll take a look.
+  ## Tests
 
-  // ## Tests
+  There are no tests for this app.
 
-  // There are no tests for this app.
+  ## Questions
 
-  // ## Questions
-
-  // Get in touch via GitHub or email me on name@email.com
-  // `;
+  Get in touch via GitHub or email me on name@email.com
+  `;
 };
 
 module.exports = generateMarkdown;
