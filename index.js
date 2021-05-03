@@ -8,13 +8,46 @@ const questions = [
   // Define the questions.
   {
     type: "input",
-    message: "What is your full name?",
-    name: "fullName",
+    message: "What is the title of your project?",
+    name: "projectName",
   },
   {
     type: "input",
-    message: "Where Do you live?",
-    name: "location",
+    message: "Please add a description for your project",
+    name: "description",
+  },
+  {
+    type: "confirm",
+    message: "Does your project require any installation?",
+    name: "installation",
+  },
+  {
+    type: "input",
+    message: "Please add some information about how to use your project.",
+    name: "usage",
+  },
+  {
+    type: "confirm",
+    message: "Does your project require a licence?",
+    name: "licence",
+  },
+  {
+    type: "input",
+    message:
+      "Please add any information for people wanting to contribute to your project",
+    name: "contribution",
+  },
+  {
+    type: "confirm",
+    message: "Are there any tests for this project?",
+    name: "tests",
+  },
+  {
+    type: "checkbox",
+    message:
+      "What is the best way for people to contact you regarding your project?",
+    name: "questions",
+    choices: ["Email", "Github", "LinkedIn"],
   },
 ];
 
