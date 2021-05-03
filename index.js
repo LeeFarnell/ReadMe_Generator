@@ -1,5 +1,4 @@
 // TODO: Include packages needed for this application
-
 const inquirer = require("inquirer");
 
 // TODO: Create an array of questions for user input
@@ -10,6 +9,11 @@ const questions = [
     message: "What is your full name?",
     name: "fullName",
   },
+  {
+    type: "input",
+    message: "Where Do you live?",
+    name: "location",
+  },
 ];
 
 // TODO: Create a function to write README file
@@ -18,8 +22,6 @@ const writeToFile = (fileName, data) => {};
 // TODO: Create a function to initialize app
 const init = async () => {
   // Ask the questions.
-  console.log("hello");
-
   const answers = await inquirer.prompt(questions);
 
   console.log(answers);
