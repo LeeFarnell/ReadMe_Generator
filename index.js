@@ -27,9 +27,10 @@ const questions = [
     name: "usage",
   },
   {
-    type: "confirm",
-    message: "Does your project require a licence?",
+    type: "list",
+    message: "Please select your licence for this project.",
     name: "licence",
+    choices: ["MIT", "APACHE_2.0", "GPL_3.0", "BSD_3", "None"],
   },
   {
     type: "input",

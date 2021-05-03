@@ -27,13 +27,22 @@ const generateMarkdown = (answers) => {
 
   return `# ${projectName}
 
-  ![Licence Badge](https://img.shields.io/badge/licence-%20-green)
+  ![Licence Badge](https://img.shields.io/badge/licence-${licence}-green)
 
+  ## Table of Contents
+  - [Description](#description)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
+  
   ## Description
 
   ${description}
 
-  ## Table of Contents
 
   ## Installation
 
