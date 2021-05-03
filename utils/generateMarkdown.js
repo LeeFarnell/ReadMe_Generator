@@ -13,13 +13,17 @@ const renderLicenceBadge = (licence) => {
 const renderLicenceLink = (licence) => {
   if (licence === "None") {
     return "";
-  } else if (licence === "MIT") {
+  }
+  if (licence === "MIT") {
     return `https://www.mit.edu/~amini/LICENSE.md`;
-  } else if (licence === "APACHE_2.0") {
+  }
+  if (licence === "APACHE_2.0") {
     return `https://www.apache.org/licenses/LICENSE-2.0`;
-  } else if (licence === "GPL_3") {
+  }
+  if (licence === "GPL_3.0") {
     return `https://www.gnu.org/licenses/gpl-3.0.en.html`;
-  } else if (licence === "BSD_3") {
+  }
+  if (licence === "BSD_3") {
     return `https://opensource.org/licenses/BSD-3-Clause`;
   }
 };
