@@ -18,7 +18,9 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-const writeToFile = (fileName, data) => {};
+const writeToFile = (fileName, data) => {
+  console.log(fileName);
+};
 
 // TODO: Create a function to initialize app
 const init = async () => {
@@ -27,7 +29,7 @@ const init = async () => {
 
   const generatedMarkdown = generateMarkdown(answers);
 
-  console.log(generatedMarkdown);
+  writeToFile(generatedMarkdown);
 };
 
 // Function call to initialize app
