@@ -1,14 +1,38 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-const renderLicenseBadge = (license) => {};
+const renderLicenceBadge = (licence) => {
+  if (licence === "None") {
+    return "";
+  } else {
+    return `![Licence Badge](https://img.shields.io/badge/licence-${licence}-green)`;
+  }
+};
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-const renderLicenseLink = (license) => {};
+const renderLicenceLink = (licence) => {
+  if (licence === "None") {
+    return "";
+  } else if (licence === "MIT") {
+    return `https://www.mit.edu/~amini/LICENSE.md`;
+  } else if (licence === "APACHE_2.0") {
+    return `https://www.apache.org/licenses/LICENSE-2.0`;
+  } else if (licence === "GPL_3") {
+    return `https://www.gnu.org/licenses/gpl-3.0.en.html`;
+  } else if (licence === "BSD_3") {
+    return `https://opensource.org/licenses/BSD-3-Clause`;
+  }
+};
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-const renderLicenseSection = (license) => {};
+const renderLicenceSection = (licence) => {
+  if (licence === "None") {
+    return "This content is not licenced.";
+  } else {
+    return `This content is licenced under the ${licence} Licence.`;
+  }
+};
 
 // TODO: Create a function to generate markdown for README
 const generateMarkdown = (answers) => {
@@ -25,16 +49,20 @@ const generateMarkdown = (answers) => {
     questions,
   } = answers;
 
+  const licenceBadge = renderLicenceBadge(licence);
+  const licenceSection = renderLicenceSection(licence);
+  const licenceLink = renderLicenceLink(licence);
+
   return `# ${projectName}
 
-  ![Licence Badge](https://img.shields.io/badge/licence-${licence}-green)
+  ${licenceBadge}
 
   ## Table of Contents
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
-  - [License](#license)
+  - [Licence](#licence)
   - [Contributing](#contributing)
   - [Tests](#tests)
   - [Questions](#questions)
@@ -55,7 +83,8 @@ const generateMarkdown = (answers) => {
 
   ## Licence
 
-  This content is licensed under the ${licence} Licence.
+  ${licenceSection}
+  ${licenceLink}
 
   ## Contributing
 
