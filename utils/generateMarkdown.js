@@ -14,42 +14,50 @@ const renderLicenseSection = (license) => {};
 const generateMarkdown = (answers) => {
   console.log(answers);
 
-  const { fullName, location } = answers;
+  const {
+    projectName,
+    description,
+    installation,
+    usage,
+    licence,
+    contribution,
+    tests,
+    questions,
+  } = answers;
 
-  return `# ${fullName}
+  return `# ${projectName}
 
   ![Licence Badge](https://img.shields.io/badge/licence-%20-green)
 
-  ## ${location}
+  ## Description
 
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  ${description}
 
   ## Table of Contents
 
   ## Installation
 
-  Installation Information
+  ${installation}
 
   ## Usage
 
-  - When the app is running, answer all the questions.
-  - After the questions are answered, check out the generated markdown.
+  ${usage}
 
   ## Licence
 
-  Licence code goes here
+  ${licence}
 
   ## Contributing
 
-  Open up a pull request and I'll take a look.
+  ${contribution}
 
   ## Tests
 
-  There are no tests for this app.
+  ${tests}
 
   ## Questions
 
-  Get in touch via GitHub or email me on name@email.com
+  ${questions}
   `;
 };
 

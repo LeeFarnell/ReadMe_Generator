@@ -51,6 +51,14 @@ const questions = [
   },
 ];
 
+const installQuestion = [
+  {
+    type: "confirm",
+    message: "Does your project require any installation?",
+    name: "installation",
+  },
+];
+
 // TODO: Create a function to write README file
 const writeToFile = (fileName) => {
   const callback = (err) => {
@@ -68,6 +76,10 @@ const writeToFile = (fileName) => {
 const init = async () => {
   // Ask the questions.
   const answers = await inquirer.prompt(questions);
+
+  // if (questions[2] === Yes) {
+  //   installQuestion;
+  // }
 
   const generatedMarkdown = generateMarkdown(answers);
 
