@@ -4,7 +4,7 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const fs = require("fs");
 
 // TODO: Create an array of questions for user input
-const inputQuestions = [
+const questions = [
   // Define the questions.
   {
     type: "input",

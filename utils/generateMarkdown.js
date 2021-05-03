@@ -45,9 +45,9 @@ const generateMarkdown = (answers) => {
 
 
   ## Installation
-  \'\'\'
+  \`\`\`
   ${installation}
-  \'\'\'
+  \`\`\`
 
   ## Usage
 
