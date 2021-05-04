@@ -49,14 +49,6 @@ const renderLicenceSection = (licence) => {
 const generateMarkdown = (answers) => {
   console.log(answers);
 
-  const testInfoYes = (tests) => {
-    if (tests) {
-      return "Yes, tests are required";
-    } else {
-      return "No tests are required";
-    }
-  };
-
   const {
     projectName,
     description,
@@ -65,13 +57,13 @@ const generateMarkdown = (answers) => {
     licence,
     contribution,
     tests,
+    testInfo,
     questions,
   } = answers;
 
   const licenceBadge = renderLicenceBadge(licence);
   const licenceSection = renderLicenceSection(licence);
   const licenceLink = renderLicenceLink(licence);
-  const testInfo = testInfoYes(tests);
 
   return `# ${projectName}
 
@@ -112,7 +104,7 @@ const generateMarkdown = (answers) => {
 
   ## Tests
 
-  ${testInfo}
+  ${tests} ${testInfo}
 
   ## Questions
 

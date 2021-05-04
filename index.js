@@ -44,6 +44,14 @@ const questions = [
     name: "tests",
   },
   {
+    type: "input",
+    message: "Please add any information for testing.",
+    name: "testInfo",
+    when: (answers) => {
+      return answers.tests;
+    },
+  },
+  {
     type: "checkbox",
     message:
       "What is the best way for people to contact you regarding your project?",
