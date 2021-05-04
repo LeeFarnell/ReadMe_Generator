@@ -1,3 +1,10 @@
+const installQuestion = [
+  {
+    type: "input",
+    message: "Please add the necessary testing information.",
+    name: "testInfo",
+  },
+];
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 const renderLicenceBadge = (licence) => {
@@ -38,6 +45,14 @@ const renderLicenceSection = (licence) => {
   }
 };
 
+const testInfoYes = (tests) => {
+  if (tests) {
+    console.log("Yes Tests");
+  } else {
+    console.log("No Tests");
+  }
+};
+
 // TODO: Create a function to generate markdown for README
 const generateMarkdown = (answers) => {
   console.log(answers);
@@ -56,6 +71,7 @@ const generateMarkdown = (answers) => {
   const licenceBadge = renderLicenceBadge(licence);
   const licenceSection = renderLicenceSection(licence);
   const licenceLink = renderLicenceLink(licence);
+  const testInfo = testInfoYes(tests);
 
   return `# ${projectName}
 
@@ -96,7 +112,7 @@ const generateMarkdown = (answers) => {
 
   ## Tests
 
-  ${tests}
+  ${testInfo}
 
   ## Questions
 
