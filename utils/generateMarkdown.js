@@ -45,17 +45,17 @@ const renderLicenceSection = (licence) => {
   }
 };
 
-const testInfoYes = (tests) => {
-  if (tests) {
-    console.log("Yes Tests");
-  } else {
-    console.log("No Tests");
-  }
-};
-
 // TODO: Create a function to generate markdown for README
 const generateMarkdown = (answers) => {
   console.log(answers);
+
+  const testInfoYes = (tests) => {
+    if (tests) {
+      return "Yes, tests are required";
+    } else {
+      return "No tests are required";
+    }
+  };
 
   const {
     projectName,

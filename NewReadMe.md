@@ -37,7 +37,7 @@
 
   ## Tests
 
-  undefined
+  Yes, tests are required
 
   ## Questions
 
