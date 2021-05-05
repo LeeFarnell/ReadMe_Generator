@@ -13,7 +13,7 @@ const questions = [
   },
   {
     type: "input",
-    message: "Please add a description for your project",
+    message: "Please add a description for your project.",
     name: "description",
   },
   {
@@ -23,7 +23,7 @@ const questions = [
   },
   {
     type: "input",
-    message: "Please add the installation information.",
+    message: "Please add the necessary installation information.",
     name: "installInfo",
     when: (answers) => {
       return answers.installation;

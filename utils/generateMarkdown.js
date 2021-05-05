@@ -1,10 +1,3 @@
-const installQuestion = [
-  {
-    type: "input",
-    message: "Please add the necessary testing information.",
-    name: "testInfo",
-  },
-];
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 const renderLicenceBadge = (licence) => {
@@ -45,19 +38,35 @@ const renderLicenceSection = (licence) => {
   }
 };
 
-const noInstall = (installation) => {
+const install = (installation) => {
   if (!installation) {
-    return "No Installation Required";
+    return "No installation required.";
   } else {
     return "";
   }
 };
 
-const noInstallInfo = (installInfo) => {
+const installInformation = (installInfo) => {
   if (!installInfo) {
     return "";
   } else {
     return installInfo;
+  }
+};
+
+const test = (tests) => {
+  if (!tests) {
+    return "No testing required.";
+  } else {
+    return "";
+  }
+};
+
+const testInformation = (testInfo) => {
+  if (!testInfo) {
+    return "";
+  } else {
+    return testInfo;
   }
 };
 
@@ -81,8 +90,10 @@ const generateMarkdown = (answers) => {
   const licenceBadge = renderLicenceBadge(licence);
   const licenceSection = renderLicenceSection(licence);
   const licenceLink = renderLicenceLink(licence);
-  const noInstallation = noInstall(installation);
-  const noInstallationInfo = noInstallInfo(installInfo);
+  const installationConfirm = install(installation);
+  const installationInfoConfirm = installInformation(installInfo);
+  const testConfirm = test(tests);
+  const testInfoConfirm = testInformation(testInfo);
 
   return `# ${projectName}
 
@@ -105,7 +116,7 @@ const generateMarkdown = (answers) => {
 
   ## Installation
   \`\`\`
-  ${noInstallationInfo} ${noInstallation}
+  ${installationInfoConfirm} ${installationConfirm}
   \`\`\`
 
   ## Usage
@@ -123,7 +134,7 @@ const generateMarkdown = (answers) => {
 
   ## Tests
 
-  ${tests} ${testInfo}
+  ${testConfirm} ${testInfoConfirm}
 
   ## Questions
 
