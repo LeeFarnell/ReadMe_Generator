@@ -60,11 +60,10 @@ const questions = [
     },
   },
   {
-    type: "checkbox",
+    type: "input",
     message:
-      "What is the best way for people to contact you regarding your project?",
+      "Please enter any necessary contact information so people can contact you.",
     name: "questions",
-    choices: ["Email", "Github", "LinkedIn"],
   },
 ];
 

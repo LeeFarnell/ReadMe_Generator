@@ -1,4 +1,4 @@
-# K
+# E
 
   ![Licence Badge](https://img.shields.io/badge/licence-MIT-green)
 
@@ -14,17 +14,17 @@
 
   ## Description
 
-  K
+  E
 
 
   ## Installation
   ```
-   No installation required.
+  R 
   ```
 
   ## Usage
 
-  k
+  E
 
   ## Licence
 
@@ -33,13 +33,13 @@
 
   ## Contributing
 
-  K
+  E
 
   ## Tests
 
-  No testing required. 
+   R
 
   ## Questions
 
-  Email
+  E
   
