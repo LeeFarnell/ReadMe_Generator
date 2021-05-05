@@ -17,9 +17,17 @@ const questions = [
     name: "description",
   },
   {
-    type: "input",
-    message: "Please add any necessary installation information.",
+    type: "confirm",
+    message: "Does your project require any installation?",
     name: "installation",
+  },
+  {
+    type: "input",
+    message: "Please add the installation information.",
+    name: "installInfo",
+    when: (answers) => {
+      return answers.installation;
+    },
   },
   {
     type: "input",

@@ -45,6 +45,22 @@ const renderLicenceSection = (licence) => {
   }
 };
 
+const noInstall = (installation) => {
+  if (!installation) {
+    return "No Installation Required";
+  } else {
+    return "";
+  }
+};
+
+const noInstallInfo = (installInfo) => {
+  if (!installInfo) {
+    return "";
+  } else {
+    return installInfo;
+  }
+};
+
 // TODO: Create a function to generate markdown for README
 const generateMarkdown = (answers) => {
   console.log(answers);
@@ -53,6 +69,7 @@ const generateMarkdown = (answers) => {
     projectName,
     description,
     installation,
+    installInfo,
     usage,
     licence,
     contribution,
@@ -64,6 +81,8 @@ const generateMarkdown = (answers) => {
   const licenceBadge = renderLicenceBadge(licence);
   const licenceSection = renderLicenceSection(licence);
   const licenceLink = renderLicenceLink(licence);
+  const noInstallation = noInstall(installation);
+  const noInstallationInfo = noInstallInfo(installInfo);
 
   return `# ${projectName}
 
@@ -86,7 +105,7 @@ const generateMarkdown = (answers) => {
 
   ## Installation
   \`\`\`
-  ${installation}
+  ${noInstallationInfo} ${noInstallation}
   \`\`\`
 
   ## Usage
