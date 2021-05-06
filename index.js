@@ -61,8 +61,12 @@ const questions = [
   },
   {
     type: "input",
-    message:
-      "Please enter any necessary contact information so people can contact you.",
+    message: "What is your email address?",
+    name: "email",
+  },
+  {
+    type: "input",
+    message: "How else can people contact you?",
     name: "questions",
   },
 ];

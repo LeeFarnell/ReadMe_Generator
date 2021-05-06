@@ -1,4 +1,4 @@
-# My Amazing Project
+# My amazing project!
 
   ![Licence Badge](https://img.shields.io/badge/licence-MIT-green)
 
@@ -14,7 +14,7 @@
 
   ## Description
 
-  My project is amazing.
+  My project is amazing!
 
 
   ## Installation
@@ -33,13 +33,16 @@
 
   ## Contributing
 
-  Open a pull request.
+  Open a pull request!
 
   ## Tests
 
-   Test in the terminal using node!
+   Run tests using node!
 
   ## Questions
 
-  Email me! Name@email.com
+  Have any questions? Get in touch!
+  
+  name@email.com
+  Find me on linkedIn! 
   

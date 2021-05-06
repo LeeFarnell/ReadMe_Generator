@@ -84,6 +84,7 @@ const generateMarkdown = (answers) => {
     contribution,
     tests,
     testInfo,
+    email,
     questions,
   } = answers;
 
@@ -138,6 +139,9 @@ const generateMarkdown = (answers) => {
 
   ## Questions
 
+  Have any questions? Get in touch!
+  
+  ${email}
   ${questions}
   `;
 };
