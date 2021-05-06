@@ -1,4 +1,4 @@
-# E
+# My Amazing Project
 
   ![Licence Badge](https://img.shields.io/badge/licence-MIT-green)
 
@@ -14,17 +14,17 @@
 
   ## Description
 
-  E
+  My project is amazing.
 
 
   ## Installation
   ```
-  R 
+  npm install 
   ```
 
   ## Usage
 
-  E
+  Press the button and away you go!
 
   ## Licence
 
@@ -33,13 +33,13 @@
 
   ## Contributing
 
-  E
+  Open a pull request.
 
   ## Tests
 
-   R
+   Test in the terminal using node!
 
   ## Questions
 
-  E
+  Email me! Name@email.com
   
