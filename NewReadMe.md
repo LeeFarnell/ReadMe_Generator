@@ -37,12 +37,12 @@
 
   ## Tests
 
-   Run tests using node!
+   Run the tests in the terminal and use node
 
   ## Questions
 
   Have any questions? Get in touch!
   
   name@email.com
-  Find me on linkedIn! 
+  Try me on linkedin!
   
