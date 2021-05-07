@@ -75,9 +75,9 @@ const questions = [
 const writeToFile = (fileName) => {
   const callback = (err) => {
     if (err) {
-      console.log(err);
+      return (err);
     } else {
-      console.log("ReadMe Created");
+      return ("ReadMe Created");
     }
   };
 

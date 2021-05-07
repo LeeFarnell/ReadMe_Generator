@@ -72,8 +72,6 @@ const testInformation = (testInfo) => {
 
 // TODO: Create a function to generate markdown for README
 const generateMarkdown = (answers) => {
-  console.log(answers);
-
   const {
     projectName,
     description,
