@@ -15,7 +15,7 @@ This project was relatively simple, but the challenge I faced was learning how t
 
 ## Link to video
 
-https://drive.google.com/file/d/1jIjYFdFaWR8GtZoevZxCBDHUpnEWXTSy/view
+https://drive.google.com/file/d/14GZeAhlbuYNRRWr1twfwta8fteCECoL2/view
 
 ## Screenshots
 

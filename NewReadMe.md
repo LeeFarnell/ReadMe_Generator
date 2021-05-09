@@ -1,4 +1,4 @@
-# My amazing project!
+# My Amazing Project!
 
   ![Licence Badge](https://img.shields.io/badge/licence-MIT-green)
 
@@ -33,16 +33,15 @@
 
   ## Contributing
 
-  Open a pull request!
+  Open a pull request. 
 
   ## Tests
 
-   Run the tests in the terminal and use node
+   Test using node.js!
 
   ## Questions
 
   Have any questions? Get in touch!
   
-  name@email.com
-  Try me on linkedin!
+  name@email.com, github.com/myname, I'd prefer it if you could email me! 
   

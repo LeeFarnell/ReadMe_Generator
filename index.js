@@ -66,7 +66,12 @@ const questions = [
   },
   {
     type: "input",
-    message: "How else can people contact you?",
+    message: "Please provide your GitHub Link.",
+    name: "github",
+  },
+  {
+    type: "input",
+    message: "What is the best way for people to contact you?",
     name: "questions",
   },
 ];
@@ -75,9 +80,9 @@ const questions = [
 const writeToFile = (fileName) => {
   const callback = (err) => {
     if (err) {
-      return (err);
+      console.info(err);
     } else {
-      return ("ReadMe Created");
+      console.info("ReadMe Created");
     }
   };
 
